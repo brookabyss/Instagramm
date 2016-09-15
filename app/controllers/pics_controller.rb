@@ -1,6 +1,6 @@
 class PicsController < ApplicationController
   before_action :find_pic, only: [:show, :edit, :update, :destroy]
-  
+  before_filter :authenticate_user!
   def index
     @pics = Pic.all.order("created_at Desc")
   end
@@ -9,11 +9,11 @@ class PicsController < ApplicationController
   end 
     
   def new
-    @pic = Pic.new
+    @pic = current_user.pics.build
   end
   
   def create
-    @pic = Pic.new(pic_params)
+    @pic = current_user.pics.build(pic_params)
     
     if @pic.save
       redirect_to @pic, notice: "Yess! It was posted!"
