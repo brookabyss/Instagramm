@@ -3,8 +3,9 @@ source 'https://rubygems.org'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.0.0', '>= 5.0.0.1'
-# Use sqlite3 as the database for Active Record
-gem 'sqlite3'
+# Use
+
+
 # Use Puma as the app server
 gem 'puma', '~> 3.0'
 # Use SCSS for stylesheets
@@ -29,17 +30,14 @@ gem 'devise', '~>4.0'
 gem 'masonry-rails', '~> 0.2.1'
 gem 'paperclip', '~> 4.2.0'
 gem 'acts_as_votable', '~> 0.10.0'
-# Use Redis adapter to run Action Cable in production
-# gem 'redis', '~> 3.0'
-# Use ActiveModel has_secure_password
-# gem 'bcrypt', '~> 3.1.7'
+gem 'pg'
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
 group :development, :test do
-  # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platform: :mri
+  gem 'sqlite3'
 end
 
 group :development do
