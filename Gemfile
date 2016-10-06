@@ -28,11 +28,11 @@ gem 'haml', '~> 4.0', '>= 4.0.7'
 gem 'simple_form', '~> 3.3', '>= 3.3.1'
 gem 'devise', '~>4.0'
 gem 'masonry-rails', '~> 0.2.1'
-gem 'paperclip', '~> 4.2.0'
+# gem 'paperclip', '~> 4.2.0'
 gem 'acts_as_votable', '~> 0.10.0'
 gem 'pg'
 gem 'aws-sdk'
-
+gem 'paperclip', :git=> 'https://github.com/thoughtbot/paperclip', :ref => '523bd46c768226893f23889079a7aa9c73b57d68'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
