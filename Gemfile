@@ -31,7 +31,7 @@ gem 'masonry-rails', '~> 0.2.1'
 gem 'paperclip', '~> 4.2.0'
 gem 'acts_as_votable', '~> 0.10.0'
 gem 'pg'
-gem 'aws-sdk', '~> 2.6', '>= 2.6.4'
+gem 'aws-sdk'
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
