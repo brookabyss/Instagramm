@@ -5,7 +5,7 @@ source 'https://rubygems.org'
 gem 'rails', '~> 5.0.0', '>= 5.0.0.1'
 # Use
 
-
+gem 'sqlite3'
 # Use Puma as the app server
 gem 'puma', '~> 3.0'
 # Use SCSS for stylesheets
@@ -31,13 +31,14 @@ gem 'masonry-rails', '~> 0.2.1'
 gem 'paperclip', '~> 4.2.0'
 gem 'acts_as_votable', '~> 0.10.0'
 gem 'pg'
+gem 'aws-sdk', '~> 2.6', '>= 2.6.4'
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
 group :development, :test do
   gem 'byebug', platform: :mri
-  gem 'sqlite3'
+  
 end
 
 group :development do
