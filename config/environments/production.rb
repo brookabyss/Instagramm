@@ -91,6 +91,7 @@ config.paperclip_defaults = {
     access_key_id: ENV.fetch('AWS_ACCESS_KEY_ID'),
     secret_access_key: ENV.fetch('AWS_SECRET_ACCESS_KEY'),
     s3_region: ENV.fetch('AWS_REGION'),
+    url: 'https://console.aws.amazon.com/s3/home?region=us-west-2#&bucket=instagram-rep&prefix='
   }
 }
 
